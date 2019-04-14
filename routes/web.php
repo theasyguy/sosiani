@@ -55,3 +55,14 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
+//client routes
+
+Route::group(['middleware'=>'auth'],function (){
+    Route::resource('client','ClientController');
+});
+
+//client routes
+
+Route::group(['middleware'=>'auth'],function (){
+    Route::resource('product','ProductController');
+});

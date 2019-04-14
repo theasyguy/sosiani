@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ __('Material Dashboard Laravel - Free Frontend Preset for Laravel') }}</title>
+    <title>{{ __('Sosiani - Flowers') }}</title>
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
     <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -140,6 +140,7 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="{{ asset('material') }}/demo/demo.js"></script>
         <script src="{{ asset('material') }}/js/settings.js"></script>
+
         @stack('js')
     </body>
 </html>
